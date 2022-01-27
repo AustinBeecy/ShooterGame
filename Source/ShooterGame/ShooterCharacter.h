@@ -72,6 +72,14 @@ private:
 	/*montage for fire weapon*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Combat, meta = (AllowPrivateAccess = "true"))
 	class UAnimMontage* HipFireMontage; 
+	
+	/*Particles when bullet hits*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Combat, meta = (AllowPrivateAccess = "true"))
+	UParticleSystem* ImpactParticles;
+
+	/*Smoke Trail for Bullets*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Combat, meta = (AllowPrivateAccess = "true"))
+	UParticleSystem* BeamParticles;
 
 
 public:
